@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>CashPickupPatch</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+    <SignAssembly>False</SignAssembly>
+    <Title>CashPickupPatch</Title>
+    <Authors>Hydraxonn</Authors>
+    <Company>GTA V UE</Company>
+    <Description>Pick up and throw props like in GTA 4</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ScriptHookVDotNet3">
+      <HintPath>..\..\..\Games\Grand Theft Auto V\ScriptHookVDotNet3.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
