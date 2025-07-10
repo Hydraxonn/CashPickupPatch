@@ -15,7 +15,7 @@
     <Title>CashPickupPatch</Title>
     <Authors>Hydraxonn</Authors>
     <Company>GTA V UE</Company>
-    <Description>Pick up and throw props like in GTA 4</Description>
+    <Description>Allow extra peds to pick up money</Description>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ScriptHookVDotNet3">

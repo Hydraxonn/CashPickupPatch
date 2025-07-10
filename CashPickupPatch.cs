@@ -27,7 +27,7 @@ public class CashPickupPatch : Script
                         switch (pickup.Model.Hash)
                         {
                             case -295781225: //prop_cash_pile_01
-                                add = rng.Next(500, 2000);
+                                add = rng.Next(10, 500);
                                 //GTA.UI.Notification.Show("Pickup detected - Cash Pile");
                                 Function.Call(Hash.PLAY_SOUND, -1, "PICK_UP_MONEY", "HUD_FRONTEND_CUSTOM_SOUNDSET");
                                 Game.Player.Money += add;
@@ -41,14 +41,14 @@ public class CashPickupPatch : Script
                                 pickup.Delete();
                                 break;
                             case -1379254308: //Prop_LD_Wallet_01
-                                add = rng.Next(500, 2000);
+                                add = rng.Next(100, 2000);
                                 //GTA.UI.Notification.Show("Pickup detected - Wallet");
                                 Function.Call(Hash.PLAY_SOUND, -1, "PICK_UP_MONEY", "HUD_FRONTEND_CUSTOM_SOUNDSET");
                                 Game.Player.Money += add;
                                 pickup.Delete();
                                 break;
                             case -1666779307: //p_poly_bag_01_s
-                                add = rng.Next(5000, 12000);
+                                add = rng.Next(800, 3000);
                                 //GTA.UI.Notification.Show("Pickup detected - Cash Bag");
                                 Function.Call(Hash.PLAY_SOUND, -1, "PICK_UP_MONEY", "HUD_FRONTEND_CUSTOM_SOUNDSET");
                                 Game.Player.Money += add;
@@ -62,14 +62,14 @@ public class CashPickupPatch : Script
                                 pickup.Delete();
                                 break;
                             case 289396019: //prop_money_bag_01
-                                add = rng.Next(5000, 12000);
+                                add = rng.Next(800, 3000);
                                 //GTA.UI.Notification.Show("Pickup detected - Money Bag");
                                 Function.Call(Hash.PLAY_SOUND, -1, "PICK_UP_MONEY", "HUD_FRONTEND_CUSTOM_SOUNDSET");
                                 Game.Player.Money += add;
                                 pickup.Delete();
                                 break;
                             case 1374501775: //prop_choc_pq
-                                Function.Call(Hash.PLAY_SOUND, -1, "PICK_UP_SNACK", "HUD_FRONTEND_CUSTOM_SOUNDSET");
+                                Function.Call(Hash.PLAY_SOUND, -1, "PICK_UP", "HUD_FRONTEND_DEFAULT_SOUNDSET");
                                 AddHealthPickup(1);
                                 pickup.Delete();
                                 break;
